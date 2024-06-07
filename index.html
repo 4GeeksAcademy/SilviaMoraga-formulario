@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Formulario Silvia</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="text-bg-light p-3 pb-1 mb-0">
+                <h2>Payment form example</h2>
+            </div>
+            <hr class="mt-0">
+            <fieldset>
+                <div class="container">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                    <form class="row g-3 pb-3">
+                        <div class="col-md-4">
+                            <label for="num" class="form-label fw-medium">Card #</label>
+                            <input type="text" class="form-control" placeholder="Enter your card number" required
+                                autofocus>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="num" class="form-label fw-medium">CVC #</label>
+                            <input type="text" class="form-control" placeholder="Enter your card cvc" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="num" class="form-label fw-medium">Amount</label>
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <span>$</span>
+                                </div>
+                                <div class="col-11">
+                                    <input type="text" class="form-control" placeholder="Amount" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="name" class="form-label fw-medium">First Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="lastName" class="form-label fw-medium">Last Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label fw-medium">City</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="State" class="form-label fw-medium">State</label>
+                            <select name="State" class="form-select" required>
+                                <option selected>Pick a state</option>
+                                <option>California</option>
+                                <option>Florida</option>
+                                <option>Nebraska</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="PostalCode" class="form-label fw-medium">Postal Code</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-12 fw-medium">
+                            <label for="accept">We accept:</label>
+                            <div class="col-5 card p-2 mt-2 bg-secondary text-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <input type="radio" name="card">
+                                        <i class="fa-brands fa-cc-mastercard fa-lg"></i>
+                                    </div>
+                                    <div>
+                                    <input type="radio" name="card">
+                                    <i class="fa-brands fa-cc-visa fa-lg"></i>
+                                </div>
+                                <div>
+                                    <input type="radio" name="card">
+                                    <i class="fa-brands fa-cc-diners-club fa-lg"></i>
+                                </div>
+                                <div>
+                                    <input type="radio" name="card">
+                                    <i class="fa-brands fa-cc-amex fa-lg"></i>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 fw-medium">
+                            <label for="message">Message</label>
+                            <textarea class="form-control my-2"></textarea>
+                            <span class="text-secondary fw-light">Add any notes here.</span>
+                        </div>
+            </fieldset>
+            <hr class="mb-0">
+            <div class="text-bg-light p-3 gap-2 d-flex justify-content-end mt-0">
+                    <button type="submit" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
